@@ -11,4 +11,7 @@ void main() {
   // 변수명 중복 불가
   //var name = '김고은'; //  Error: 'name' is already declared in this scope.
   print('hello world1');
+
+  dynamic book = 'mybook';
+  book = 1;
 }

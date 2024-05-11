@@ -1,12 +1,12 @@
 // import 'package:flutter/material.dart';
 
 void main() {
-  Set<String> blackPink = {'로제', '지수', '리사', '제니', '제니'};
+  double? number; // 자동으로 null값 지정
+  print(number);
 
-  print(blackPink);
-  print(blackPink.contains('로제')); // 값이 있는지 확인
-  print(blackPink.toList());  // 리스트로 변환하기
+  number ??= 3; // ??를 사용하면 기존 값이 null일 때만 저장됩니다.
+  print(number);
 
-  List<String> blackPink2 = ['로제', '지수', '지수'];
-  print(Set.from(blackPink2)); // 리스트 타입을 Set 타입으로 변환
+  number ??= 4; // null이 아니므로 3이 유지됩니다.
+  print(number);
 }

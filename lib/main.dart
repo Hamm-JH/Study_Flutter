@@ -1,16 +1,12 @@
 // import 'package:flutter/material.dart';
 
 void main() {
-  Map<String, String> dictionary = {
-    'Harry Potter': '해리 포터',
-    'Ron Weasley': '론 위즐리',
-    'Hermione Granger': '헤르미온느 그레인저',
-  };
+  Set<String> blackPink = {'로제', '지수', '리사', '제니', '제니'};
 
-  print(dictionary['Harry Potter']);
-  print(dictionary['Hermione Granger']);
+  print(blackPink);
+  print(blackPink.contains('로제')); // 값이 있는지 확인
+  print(blackPink.toList());  // 리스트로 변환하기
 
-  print(dictionary.keys);
-  // Iterable이 반환되기 때문에 .toList()를 실행해서 List를 반환받을 수도 있음
-  print(dictionary.values);
+  List<String> blackPink2 = ['로제', '지수', '지수'];
+  print(Set.from(blackPink2)); // 리스트 타입을 Set 타입으로 변환
 }

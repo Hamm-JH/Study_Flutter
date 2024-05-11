@@ -1,20 +1,21 @@
 // import 'package:flutter/material.dart';
 
 void main() {
-  // var name = '코드팩토리';
+  // // String - 문자열
+  // String name = '코드팩토리';
+  //
+  // // int - 정수
+  // int isInt = 10;
+  //
+  // // double - 실수
+  // double isDouble = 2.5;
+  //
+  // bool isTrue = true;
+  //
   // print(name);
-  //
-  // // 변수값 변경 가능
-  // name = '골든래빗';
-  // print(name);
-  //
-  // // 변수명 중복 불가
-  // //var name = '김고은'; //  Error: 'name' is already declared in this scope.
-  // print('hello world1');
-  //
-  // dynamic book = 'mybook';
-  // book = 1;
+  // print(isInt);
+  // print(isDouble);
+  // print(isTrue);
 
-  // final String name = 'Howard';
-  // name = 'Ham';
+
 }

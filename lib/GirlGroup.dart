@@ -1,16 +1,20 @@
 import 'Idol.dart';
 
-class GirlGroup extends Idol {
-  // 상속처럼 super 키워드를 사용해도 되고 생성자의 매개변수로
-  // 직접 super키워드를 사용해도 됩니다.
-  GirlGroup (
-      super.name,
-      super.membersCount,
+// implements 키워드를 사용하면 원하는 클래스를 인터페이스로 사용할 수 있습니다.
+class GirlGroup implements Idol {
+  final String name;
+  final int membersCount;
+
+  GirlGroup(
+      this.name,
+      this.membersCount,
       );
 
-  // override 키워드를 사용해 오버라이드합니다.
-  @override
   void sayName() {
-    print('저는 여자 아이돌 ${this.name}입니다.');
+    print('저는 여자 아이돌 ${this.name}입니다');
+  }
+
+  void sayMembersCount() {
+    print('${this.name} 멤버는 ${this.membersCount}명입니다.');
   }
 }

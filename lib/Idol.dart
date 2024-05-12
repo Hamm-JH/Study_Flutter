@@ -1,13 +1,7 @@
-class Idol {
-  // 생성자에서 입력받는 변수들은 일반적으로 final 키워드 사용
-  final String name;
+class IdolOther {
+  // '_'로 변수명을 시작하면
+  // 프라이빗 변수를 선언할 수 있습니다.
+  String _name;
 
-  // 생성자 선언
-  // 클래스와 같은 이름이어야 합니다.
-  // 함수의 매개변수를 선언하는 것처럼 매개변수를 지정해줍니다.
-  Idol(String name) : this.name = name;
-
-  void sayName() {
-    print('저는 ${this.name}입니다');
-  }
+  IdolOther(this._name);
 }

@@ -1,17 +1,17 @@
+// implements 키워드를 사용해 추상 클래스를 구현하는 클래스
 import 'Idol.dart';
 
-// implements 키워드를 사용하면 원하는 클래스를 인터페이스로 사용할 수 있습니다.
 class GirlGroup implements Idol {
   final String name;
   final int membersCount;
 
   GirlGroup(
       this.name,
-      this.membersCount,
+      this.membersCount
       );
 
   void sayName() {
-    print('저는 여자 아이돌 ${this.name}입니다');
+    print('저는 여자 아이돌 ${this.name}입니다.');
   }
 
   void sayMembersCount() {

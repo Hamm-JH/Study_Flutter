@@ -1,14 +1,13 @@
-// class 키워드를 입력 후 클래스명을 지정해 클래스를 선언
 class Idol {
-  // 클래스에 종속되는 변수를 지정할 수 있습니다.
-  String name = '블랙핑크';
+  // 생성자에서 입력받는 변수들은 일반적으로 final 키워드 사용
+  final String name;
 
-  // 클래스에 종속되는 함수를 지정할 수 있습니다.
+  // 생성자 선언
+  // 클래스와 같은 이름이어야 합니다.
+  // 함수의 매개변수를 선언하는 것처럼 매개변수를 지정해줍니다.
+  Idol(String name) : this.name = name;
+
   void sayName() {
-    // 클래스 내부의 속성을 지칭하고 싶을 때는 this키워드를 사용하면 됩니다.
-    // 결과적으로 this.name은 Idol 클래스의 name 변수를 지칭합니다.
-    print('저는 ${this.name}입니다.');
-    // 스코프 안에 같은 속성 이름이 하나만 존재한다면 this를 생략할 수 있습니다.
-    print('저는 $name입니다.');
+    print('저는 ${this.name}입니다');
   }
 }

@@ -1,10 +1,12 @@
-import 'package:flutter_book_study/BoyGroup.dart';
-import 'package:flutter_book_study/Idol.dart';
+import 'package:flutter_book_study/GirlGroup.dart';
 
 void main() {
-  BoyGroup bts = BoyGroup('BTS', 7); // 생성자로 객체 생성
-  
-  bts.sayName();    // 부모한테 물려받은 메서드
-  bts.sayMembersCount();  // 부모한테 물려받은 메서드
-  bts.sayMale();    // 자식이 새로 추가한 메서드
+  GirlGroup blackPink = GirlGroup('블랙핑크', 4);
+
+  blackPink.sayName();  // 자식 클래스의 오버라이드된 메서드 사용
+
+  // sayMembersCount는 오버라이드하지 않았기 때문에
+  // 그대로 Idol 클래스의 메서드가 실행됩니다.
+  // 부모 클래스의 메서드 사용
+  blackPink.sayMembersCount();
 }

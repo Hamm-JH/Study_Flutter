@@ -6,8 +6,45 @@ void main() {
   // runApp(RowWidgetExample());
   // runApp(ColumnWidgetExample());
   // runApp(FlexibleWidgetExample());
-  runApp(ExpandedWidgetExample());
+  // runApp(ExpandedWidgetExample());
+  runApp(StackWidgetExample());
 }
+
+class StackWidgetExample extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Stack(
+          children: [
+            // 빨간색 Container
+            Container(
+              height: 300.0,
+              width: 300.0,
+              color: Colors.red,
+            ),
+
+            // 노란색 Container
+            Container(
+              height: 250.0,
+              width: 250.0,
+              color: Colors.yellow,
+            ),
+
+            // 파란색 Container
+            Container(
+              height: 200.0,
+              width: 200.0,
+              color: Colors.blue,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
 
 class ExpandedWidgetExample extends StatelessWidget{
   @override
@@ -35,7 +72,6 @@ class ExpandedWidgetExample extends StatelessWidget{
     );
   }
 }
-
 
 class FlexibleWidgetExample extends StatelessWidget{
   @override

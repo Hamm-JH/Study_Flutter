@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FloatingActionButtonExample());
-  // runApp(MyApp());
+  // runApp(FloatingActionButtonExample());
+  runApp(MyApp());
 }
 
 class FloatingActionButtonExample extends StatelessWidget {
@@ -27,28 +27,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: GestureDetector(
-            // 1 한 번 탭했을 때 실행할 함수
-            onTap: () {
-              // 출력 결과는 안드로이드 스튜디오의 [Run] 탭에서 확인 가능합니다.
-              print('on tap');
-            },
-            // 2 두 번 탭했을 때 실행할 함수
-            onDoubleTap: () {
-              print('on double tap');
-            },
-            // 3 길게 눌렀을 때 실행할 함수
-            onLongPress: () {
-              print('on long press');
-            },
-            // 제스처를 적용할 위젯
+          child: SizedBox(
+            // 높이 지정
+            height: 200.0,
+            // 너비 지정
+            width: 200.0,
+
+            // SizedBox는 색상이 없으므로 크기를 확인하는
+            // 용도로 Container 추가
             child: Container(
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-              width: 100.0,
-              height: 100.0,
-            )
+              color: Colors.red,
+            ),
           )
         ),
       )
